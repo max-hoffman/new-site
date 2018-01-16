@@ -14,7 +14,9 @@ const styles = {
   title: {
     fontSize: 50,
     margin: 15,
+    marginTop: 20,
     padding: 10,
+    textAlign: 'center',
     fontWight: 'bold',
     color: '#e9ecee'
   },
@@ -27,8 +29,10 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     color: '#e9ecee',
-    fontSize: 16,
-    margin: 15
+    fontSize: 14,
+    marginLeft: 25,
+    marginBottom: 20,
+    marginTop: 15
   }
 };
 
@@ -41,11 +45,11 @@ const Header = () => (
     <Link href="/">
       <a style={styles.link}>Home</a>
     </Link>
+    <Link href="/posts">
+      <a style={styles.link}>All Posts</a>
+    </Link>
     <Link href="/about">
       <a style={styles.link}>About</a>
-    </Link>
-    <Link href="/posts">
-      <a style={styles.link}>Posts</a>
     </Link>
     <hr/>
     <Recents />
