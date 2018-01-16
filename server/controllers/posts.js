@@ -27,8 +27,7 @@ module.exports = {
   },
   delete: (req, res) => {
     return Post.destroy({ where: { id: req.params.id }})
-    // .then(post => post.destroy())
-      .then(() => res.status(201).send({ msg: "Post destroyed successfully" }))
+      .then(() => res.status(201).send({ msg: "Post deleted successfully" }))
       .catch(error => res.send(400).send(error))
   }
 };
