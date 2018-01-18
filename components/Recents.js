@@ -24,6 +24,22 @@ const styles = {
   }
 };
 
+const Recent = (props) => (
+  <Link href={props.href}>
+    <li style={styles.li}>
+      <a style={styles.link}>{props.title}</a>
+      <p style={styles.date}>{props.date}</p>
+    </li>
+  </Link>
+);
+
+const links = [
+  {
+    title: 'Making a crypto trading bot with RL and LSTMs (Python)'
+  },
+
+]
+
 const Recents = () => (
   <ul>
     <Link>

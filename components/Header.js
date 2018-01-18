@@ -8,7 +8,6 @@ const styles = {
     flexDirection: 'column',
     backgroundColor: '#2d343a',
     width: '35%',
-    // height: '100vh'
     overflow: 'auto'
   },
   title: {
