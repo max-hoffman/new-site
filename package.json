@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "express": "^4.16.2",
     "isomorphic-unfetch": "^2.0.0",
     "moment": "^2.20.1",
@@ -13,9 +14,10 @@
     "pg-hstore": "^2.3.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "remarkable": "^1.7.1",
     "sequelize": "^4.31.2"
   },
   "scripts": {
-    "dev": "node server/server.js"
+    "dev": "nodemon server/server.js"
   }
 }

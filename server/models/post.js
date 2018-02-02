@@ -1,14 +1,17 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
-  var Post = sequelize.define('Post', {
+  const Post = sequelize.define('Post', {
     title: DataTypes.STRING,
-    body: DataTypes.TEXT
-  }, {
-    classMethods: {
-      associate: function(models) {
-        // associations can be defined here
-      }
-    }
+    path: DataTypes.STRING,
+    author: DataTypes.STRING
   });
+  
+  // Post.associate = (models) => {
+  //   Post.belongsTo(models.User, {
+  //     foreignKey: 'userId',
+  //     onDelete: 'CASCADE'
+  //   });
+  // };
+
   return Post;
 };

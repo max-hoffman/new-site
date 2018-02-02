@@ -29,7 +29,7 @@ const PostLink = (props) => (
   <Link href={`/post?id=${props.link.id}`}>
     <li style={styles.li}>
       <a style={styles.title}>{props.link.title}</a>
-      <p style={styles.preview}>{`${props.link.body.slice(0, 100)}...`}</p>
+      {/* <p style={styles.preview}>{`${props.link.body.slice(0, 100)}...`}</p> */}
     </li>
   </Link>
 );

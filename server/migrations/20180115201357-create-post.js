@@ -11,8 +11,11 @@ module.exports = {
       title: {
         type: Sequelize.STRING
       },
-      body: {
-        type: Sequelize.TEXT
+      path: {
+        type: Sequelize.STRING
+      },
+      author: {
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
