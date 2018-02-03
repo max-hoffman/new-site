@@ -7,7 +7,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: '#2d343a',
-    width: '35%',
+    width: '25%',
     overflow: 'auto'
   },
   title: {
@@ -36,7 +36,7 @@ const styles = {
 };
 
 const Header = () => (
-  <div style={styles.header}>
+  <div style={styles.header} className="header">
     <Link href="/">
       <p style={styles.title}>Mild ML</p>
     </Link>
@@ -58,25 +58,25 @@ const Header = () => (
       <p>MD student at WUSM</p>
     </div>
 
-    <style jsx global>{`
-      a:link {
+    <style jsx>{`
+      .header a:link {
         text-decoration: none;
         color: #e9ecee;
       }
 
-      a:hover {
+      .header a:hover {
         opacity: 0.6
       }
 
-      a:visited {
+      .header a:visited {
         color: #e9ecee
       }
 
-      a:active {
+      .header a:active {
         opacity: 0.3;
       }
 
-      hr {
+      .header hr {
         display: block;
         height: 1px;
         border: 0;

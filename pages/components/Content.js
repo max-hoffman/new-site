@@ -6,7 +6,7 @@ const styles = {
     margin: 20,
     padding: 20,
     border: '1px solid #DDD',
-    width: '65%'
+    width: '75%'
   }
 };
 
